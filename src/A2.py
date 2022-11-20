@@ -4,7 +4,6 @@ import numpy as np
 from PIL import Image
 from pathlib import Path
 
-# Load 54 classes model
 ML_MODEL = tf.keras.models.load_model(Path("model/ML_model.hdf5").__str__())
 
 food_list = ['Apple_Pie','Baby_Back_Ribs','Baklava','Beef_Carpaccio','Beef_Tartare','Beet_Salad','Beignets','Bibimbap','Boopadpongali','Bread_Pudding','Breakfast_Burrito', 
@@ -20,7 +19,7 @@ food_list = ['Apple_Pie','Baby_Back_Ribs','Baklava','Beef_Carpaccio','Beef_Tarta
              'Ramen','Ravioli','Red_Velvet_Cake','Risotto','Roast_Duck','Roast_Fish','Samosa','Sashimi','Scallops','Seaweed_Salad','Shrimp_And_Grits','Somtam', 
              'Soninlaweggs','Bolognese','Carbonara','Spring_Rolls','Steak','Stewedporkleg','Strawberry_Shortcake','Sushi','Tacos','Takoyaki', 
              'Tiramisu','Tomkhagai','Tomyumgoong','Tuna_Tartare','Waffles','Yamwoonsen','Yentafo']
-             
+
 classes = list(food_list)
 
 def local_get(path):
