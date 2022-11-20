@@ -4,14 +4,21 @@ import numpy as np
 from PIL import Image
 from pathlib import Path
 
-# Load 54 classes model
 ML_MODEL = tf.keras.models.load_model(Path("model/ML_model.hdf5").__str__())
 
-food_list = np.sort(['bibimbap','caesar_salad', 'cheesecake','chicken_curry','chicken_wings','chocolate_cake','club_sandwich','crab_cakes','creme_brulee','cup_cakes',\
-             'donuts','dumplings','edamame','eggs_benedict','filet_mignon','fish_and_chips','foie_gras','french_fries','fried_rice','frozen_yogurt','garlic_bread',\
-             'grilled_cheese_sandwich','grilled_salmon','gyoza','hamburger','hot_and_sour_soup','hot_dog','ice_cream','lasagna','lobster_bisque','macaroni_and_cheese',\
-             'macarons','miso_soup','mussels','omelette','onion_rings','oysters','pad_thai','pancakes','panna_cotta','peking_duck','pho','pizza','ramen','steak',\
-             'risotto','sashimi','scallops','spaghetti_bolognese','spaghetti_carbonara','sushi','takoyaki','tiramisu','waffles'])
+food_list = ['Apple_Pie','Baby_Back_Ribs','Baklava','Beef_Carpaccio','Beef_Tartare','Beet_Salad','Beignets','Bibimbap','Boopadpongali','Bread_Pudding','Breakfast_Burrito', 
+             'Bruschetta','Caesar_Salad','Cannoli','Caprese_Salad','Carrot_Cake','Ceviche','Cheese_Plate','Cheesecake','Chicken_Curry','Chicken_Quesadilla','Chicken_Wings', 
+             'Chocolate_Cake','Chocolate_Mousse','Churros','Clam_Chowder','Club_Sandwich','Crab_Cakes','Creme_Brulee','Croque_Madame','Cup_Cakes','Curriedfishcake', 
+             'Deviled_Eggs','Donuts','Dumplings','Edamame','Eggs_Benedict','Eggsstewed','Escargots','Falafel','Filet_Mignon','Fish_And_Chips','Foie_Gras','French_Fries', 
+             'French_Onion_Soup','French_Toast','Fried_Calamari','Fried_Rice','Friedkale','Frozen_Yogurt','Gaengjued','Gaengkeawwan','Garlic_Bread','Gnocchi','Goongobwoonsen', 
+             'Goongpao','Greek_Salad','Grilled_Cheese_Sandwich','Grilled_Salmon','Grilledqquid','Guacamole','Gyoza','Hamburger','Hot_And_Sour_Soup','Hot_Dog','Hoykraeng',
+             'Hoylaiprikpao','Huevos_Rancheros','Hummus','Ice_Cream','Joke','Kaithoon','Kaomangai','Kaomoodang','Khanomjeennamyakati','Khaomokgai','Khaomootodgratiem', 
+             'Khaoniewmamuang','Kkaoklukkaphi','Kormooyang','Kuakling','Kuayjab','Kuayteowreua','Larbmoo','Lasagna','Lobster_Bisque','Lobster_Roll_Sandwich','Macaroni_And_Cheese', 
+             'Macarons','Massamangai','Miso_Soup','Moosatay','Mussels','Nachos','Namtokmoo','Omelette','Onion_Rings','Oysters','Pad_Thai','Padpakbung','Padpakruammit', 
+             'Paella','Pancakes','Panna_Cotta','Peking_Duck','Phatkaphrao','Pho','Pizza','Pork_Chop','Porkstickynoodles','Poutine','Prime_Rib','Pulled_Pork_Sandwich', 
+             'Ramen','Ravioli','Red_Velvet_Cake','Risotto','Roast_Duck','Roast_Fish','Samosa','Sashimi','Scallops','Seaweed_Salad','Shrimp_And_Grits','Somtam', 
+             'Soninlaweggs','Bolognese','Carbonara','Spring_Rolls','Steak','Stewedporkleg','Strawberry_Shortcake','Sushi','Tacos','Takoyaki', 
+             'Tiramisu','Tomkhagai','Tomyumgoong','Tuna_Tartare','Waffles','Yamwoonsen','Yentafo']
 
 classes = list(food_list)
 
