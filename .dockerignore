@@ -10,4 +10,5 @@ __pycache__
 .gitattributes
 img/*
 */__pycache__
-tests/*
+/tests/*
+/git_lfs/*
