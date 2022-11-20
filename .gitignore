@@ -131,3 +131,23 @@ dmypy.json
 # macOS index files
 .DS_Store
 */.DS_Store
+
+# Ignore all .hdf5 model files and .gitattributes
+# EXCEPT on root dir.
+*.hdf5
+*/*.hdf5
+
+*.pb
+*/*.pb
+
+*.data*
+*/*.data*
+
+*.index
+*/*.index
+
+*/.gitattributes
+*/*/.gitattributes
+
+!model/ML_model.hdf5
+!.gitattributes
