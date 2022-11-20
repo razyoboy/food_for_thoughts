@@ -18,9 +18,9 @@ food_list = ['Apple_Pie','Baby_Back_Ribs','Baklava','Beef_Carpaccio','Beef_Tarta
              'Macarons','Massamangai','Miso_Soup','Moosatay','Mussels','Nachos','Namtokmoo','Omelette','Onion_Rings','Oysters','Pad_Thai','Padpakbung','Padpakruammit', 
              'Paella','Pancakes','Panna_Cotta','Peking_Duck','Phatkaphrao','Pho','Pizza','Pork_Chop','Porkstickynoodles','Poutine','Prime_Rib','Pulled_Pork_Sandwich', 
              'Ramen','Ravioli','Red_Velvet_Cake','Risotto','Roast_Duck','Roast_Fish','Samosa','Sashimi','Scallops','Seaweed_Salad','Shrimp_And_Grits','Somtam', 
-             'Soninlaweggs','Spaghetti_Bolognese','Spaghetti_Carbonara','Spring_Rolls','Steak','Stewedporkleg','Strawberry_Shortcake','Sushi','Tacos','Takoyaki', 
+             'Soninlaweggs','Bolognese','Carbonara','Spring_Rolls','Steak','Stewedporkleg','Strawberry_Shortcake','Sushi','Tacos','Takoyaki', 
              'Tiramisu','Tomkhagai','Tomyumgoong','Tuna_Tartare','Waffles','Yamwoonsen','Yentafo']
-
+             
 classes = list(food_list)
 
 def local_get(path):
