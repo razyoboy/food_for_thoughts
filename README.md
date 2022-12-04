@@ -9,7 +9,7 @@ This can be done locally, or via a Cloud serverless provider of your choice. In 
 
 ### Deployment via Google Cloud Run (CLI-method)
 
-1. Install `gcloud` CLI and follow the instructions as shown [here](https://cloud.google.com/sdk/docs/install-sdkZ)
+1. Install `gcloud` CLI and follow the instructions as shown [here](https://cloud.google.com/sdk/docs/install-sdk)
 2. Clone this repository and navigate to its root directory
 ```
 git clone https://github.com/razyoboy/food_for_thoughts/
